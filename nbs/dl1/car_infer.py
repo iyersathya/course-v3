@@ -64,6 +64,7 @@ def processImage(car_inferer, image_path):
     img = open_image(image_path)
     output = car_inferer.predict(img)
     print(f" {output}")
+    return output
 
 
 def main(argv):
